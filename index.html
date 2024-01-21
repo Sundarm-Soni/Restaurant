@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="#"  class="navbar__logo"><label>My Restaurant</label></a>
+            <input type="text" name="search" class="navbar__search" placeholder="search restaurant" />
+            <ul class="navbar__menus">
+                <li><a href="#" class="navbar__links" aria-label="all" data-menu="all">All</a></li>
+                <li><a href="#" class="navbar__links" aria-label="starters" data-menu="starters">Starters</a></li>
+                <li><a href="#" class="navbar__links" aria-label="mains" data-menu="mains">Mains</a></li>
+                <li><a href="#" class="navbar__links" aria-label="desserts" data-menu="desserts">Desserts</a></li>
+                <li><a href="#" class="navbar__links" aria-label="beverages" data-menu="beverages">Beverages</a></li>
+            </ul>
+        </nav>
+        <div class="sidenav-container">
+            <button class="hamburger">&#9776</button>
+            <nav id="sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <a href="#"  class="side__navbar--logo"><label>My Restaurant</label></a>
+                <input type="text" name="search" class="side__navbar--search" placeholder="search restaurant" />
+                <ul class="side__navbar--menus">
+                    <li><a href="#" class="side__navbar--links" aria-label="all" data-menu="all">All</a></li>
+                    <li><a href="#" class="side__navbar--links" aria-label="starters" data-menu="starters">Starters</a></li>
+                    <li><a href="#" class="side__navbar--links" aria-label="mains" data-menu="mains">Mains</a></li>
+                    <li><a href="#" class="side__navbar--links" aria-label="desserts" data-menu="desserts">Desserts</a></li>
+                    <li><a href="#" class="side__navbar--links" aria-label="beverages" data-menu="beverages">Beverages</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="cards__container">
+            </div>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
